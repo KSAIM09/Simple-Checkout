@@ -35,7 +35,7 @@ exports.createOrder = async (req, res) => {
         };
       }),
       mode: "payment",
-      success_url: `${CLIENT_URL}/payment-success`,
+      success_url: `http://localhost:5173/payment-success`,
       cancel_url: `http://localhost:5173/payment-failed`, // Updated cancel URL
     });
 
